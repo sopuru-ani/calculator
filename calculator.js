@@ -19,3 +19,9 @@ let isEqualClicked = false;
       document.getElementById("numberField").value = result;
       isEqualClicked = true;
     }
+
+    function clearLast() {
+      let inputValue = document.getElementById("numberField");
+      inputValue.value = inputValue.value.slice(0, -1);
+      document.getElementById("numberField").value = inputValue.value;
+    }
